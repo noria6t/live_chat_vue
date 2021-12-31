@@ -43,7 +43,7 @@ export default {
     },
     async createLike (messageId) {
       try {
-        const res = await axios.post(`#{VUE_CHAT_APP_API_BASE_URL}/messages/${messageId}/likes`, {},
+        const res = await axios.post(`http://localhost:3000/messages/${messageId}/likes`, {},
           {
             headers: {
               uid: this.uid,

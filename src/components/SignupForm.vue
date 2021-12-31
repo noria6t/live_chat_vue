@@ -31,7 +31,7 @@ export default {
    async signUp () {
      this.error = null
       try {
-        const res = await axios.post('#{VUE_CHAT_APP_API_BASE_URL}/auth', {
+        const res = await axios.post('http://localhost:3000/auth', {
           name: this.name,
           email: this.email,
           password: this.password,
